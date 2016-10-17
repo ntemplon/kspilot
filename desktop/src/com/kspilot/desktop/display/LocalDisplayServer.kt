@@ -72,7 +72,8 @@ class LocalDisplayServer(val settings: DisplayServerSettings = DisplayServerSett
         lock.release()
 
         val client = this.pendingClients[uuid]!!
-        return DisplayHandle(client)
+        throw NotImplementedError()
+//        return DisplayHandle(client)
     }
 
 
